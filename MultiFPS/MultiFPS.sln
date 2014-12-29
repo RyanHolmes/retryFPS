@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{41AD7B4A-8382-A883-1BE2-545676E6C8EC}") = "MultiFPS", "Assembly-CSharp-firstpass.csproj", "{DFA2B983-8370-1F58-7EF5-A2FCDEB7329B}"
+EndProject
 Project("{41AD7B4A-8382-A883-1BE2-545676E6C8EC}") = "MultiFPS", "Assembly-CSharp.csproj", "{CB6E6739-2813-B344-B05D-85626992128D}"
 EndProject
 Project("{41AD7B4A-8382-A883-1BE2-545676E6C8EC}") = "MultiFPS", "Assembly-CSharp-Editor.csproj", "{12735DA2-1A89-B06D-E78C-FA96DF04E7A6}"
@@ -13,6 +15,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFA2B983-8370-1F58-7EF5-A2FCDEB7329B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFA2B983-8370-1F58-7EF5-A2FCDEB7329B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFA2B983-8370-1F58-7EF5-A2FCDEB7329B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFA2B983-8370-1F58-7EF5-A2FCDEB7329B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CB6E6739-2813-B344-B05D-85626992128D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CB6E6739-2813-B344-B05D-85626992128D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB6E6739-2813-B344-B05D-85626992128D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -29,7 +35,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+								GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
