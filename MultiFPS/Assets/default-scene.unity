@@ -630,7 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ec0e43ae17fbb44fb372cf6a4a28f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standbyCamera: {fileID: 0}
+  standbyCamera: {fileID: 2117373908}
   spawnspots: []
 --- !u!4 &337305571
 Transform:

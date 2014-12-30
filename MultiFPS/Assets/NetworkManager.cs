@@ -8,7 +8,7 @@ using System.Collections;
 //*********************************************************************************************
 public class NetworkManager : MonoBehaviour {
 	
-	public Camera standbyCamera;
+	public GameObject standbyCamera;
 	public SpawnSpot[] spawnspots;
 	
 	// Use this for initialization
@@ -47,8 +47,9 @@ public class NetworkManager : MonoBehaviour {
 		//enable scripts and cameras
 		((MonoBehaviour)myPlayerGO.GetComponent ("FPSInputController")).enabled = true;
 		((MonoBehaviour)myPlayerGO.GetComponent ("MouseLook")).enabled = true;
+		((MonoBehaviour)myPlayerGO.GetComponent ("CharacterMotor")).enabled = true;
 		myPlayerGO.transform.FindChild ("Main Camera").gameObject.SetActive (true);
 		//we want to use player cam not main
-		standbyCamera.enabled = false;
+		standbyCamera.SetActive (false);
 	}
 }
