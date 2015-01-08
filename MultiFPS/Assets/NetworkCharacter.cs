@@ -4,15 +4,13 @@ using System.Collections;
 //photon view on character is tracking this script -- notice inheritence
 //this is tracked instead of tranform to smooth animations
 public class NetworkCharacter : Photon.MonoBehaviour {
-
+	
 	public Vector3 realPosition = Vector3.zero;
 	public Quaternion realRotation = Quaternion.identity;
-
+	
 	// Use this for initialization
-	void Start () {
-	
-	}
-	
+	void Start () {}	
+
 	// Update is called once per frame
 	void Update () {
 		if (photonView.isMine) {
@@ -24,7 +22,7 @@ public class NetworkCharacter : Photon.MonoBehaviour {
 			transform.rotation = Quaternion.Lerp(transform.rotation, realRotation, 0.1f);
 		}
 	}
-
+	
 	void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info){
 		if(stream.isWriting){
 			//our player! send our position to network

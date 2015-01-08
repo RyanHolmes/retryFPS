@@ -50,6 +50,6 @@ public class NetworkManager : MonoBehaviour {
 		((MonoBehaviour)myPlayerGO.GetComponent ("CharacterMotor")).enabled = true;
 		myPlayerGO.transform.FindChild ("Main Camera").gameObject.SetActive (true);
 		//we want to use player cam not main
-		standbyCamera.SetActive (false);
+		standbyCamera.SetActive(false);
 	}
 }
